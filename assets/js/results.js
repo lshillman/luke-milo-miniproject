@@ -6,6 +6,8 @@ var searchformEl = $('#searchform');
 var userQuery = $('#userQuery');
 var userTypeSelection = $('#userFormatSelection');
 
+var queryFromURL = window.location.href.split("=", window.location.href.indexOf("&") - window.location.href.indexOf("&"));
+// var formatFromURL =;
 
 
 function executeSearch(e) {
@@ -14,3 +16,11 @@ function executeSearch(e) {
 }
 
 searchformEl.submit(executeSearch);
+
+
+function init() {
+    // var requestURL = 'https://www.loc.gov/' + format + '/' + query + '&fo=json';
+    console.log(queryFromURL);
+}
+
+init();
