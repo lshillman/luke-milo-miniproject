@@ -1,3 +1,7 @@
 body {
    background-color: aqua; 
 }
+
+#homepage-container {
+   max-width: 700px;
+}
